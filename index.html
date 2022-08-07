@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="post">
+        <div class="container">
+            <div id="appCEP">
+                <div class="formulario">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">CEP:</lablel>
+                                <input id="cep" class="form-control" v-model="endereco.cep" @change="cepAlteradoEvento" type="text" name="cep">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">Logradouro:</lablel>
+                                <input id="logradouro" class="form-control" v-model="endereco.logradouro" type="text" name="logradouro">
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">UF:</lablel>
+                                <input id="uf" class="form-control" v-model="endereco.uf" type="text" name="uf">
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">Cidade:</lablel>
+                                <input id="cidade" class="form-control" v-model="endereco.cidade" type="text" name="cidade">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">Numero:</lablel>
+                                <input id="numero" class="form-control" v-model="endereco.numero" type="text" name="numero">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">Bairro:</lablel>
+                                <input id="bairro" class="form-control" v-model="endereco.bairro" type="text" name="bairro">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">SIAFI:</lablel>
+                                <input id="siafi" class="form-control" v-model="endereco.siaf" type="text" name="siafi">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">IBGE:</lablel>
+                                <input id="ibge" class="form-control" v-model="endereco.ibge"  type="text" name="ibge">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">DDD:</lablel>
+                                <input id="ddd" class="form-control" v-model="endereco.ddd" type="text" name="ddd">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="col-mb-3">
+                                <lablel class="form-label">GIA:</lablel>
+                                <input id="gia" class="form-control" v-model="endereco.gia" type="text" name="gia">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </form>
+    <!-- VUE - versão de desenvolvimento, inclui avisos úteis no console  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- Axios - Consumo de API -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
